@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Freelance Job Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Freelance Job Platform</h1>
+
+    <div class="form-box">
+        <h2>Post a Freelance Job</h2>
+
+        <input type="text" id="title" placeholder="Job Title">
+
+        <input type="text" id="client" placeholder="Client Name">
+
+        <input type="text" id="skills" placeholder="Required Skills">
+
+        <input type="number" id="budget" placeholder="Budget">
+
+        <button onclick="postJob()">Post Job</button>
+    </div>
+
+    <h2>Available Freelance Jobs</h2>
+
+    <input type="text" id="search"
+           placeholder="Search jobs..."
+           onkeyup="displayJobs()">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Client</th>
+                <th>Skills</th>
+                <th>Budget</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="jobList"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
